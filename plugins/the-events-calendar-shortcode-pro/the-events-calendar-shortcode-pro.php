@@ -10,6 +10,7 @@ License: GPL2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: the-events-calendar-shortcode
 */
+/* Mervin Edition *
 
 define( 'TECS_VERSION', '1.8.11' );
 define( 'TECS_PLUGIN_FILE', __FILE__ );
