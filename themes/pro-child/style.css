@@ -4,7 +4,7 @@ Theme URI: http://theme.co/pro/
 Author: Themeco
 Author URI: http://theme.co/
 Description: Make all of your modifications to Pro in this child theme.
-Version: 1.0.6
+Version: 1.0.9
 Template: pro
 */
 
@@ -20,13 +20,31 @@ h1,h2,h3,h4,h5 {
     color:inherit;
 }
 
-/* Contact Form 7 - Newsletter Signup */
-input.wpcf7-form-control.wpcf7-text {
+/* Contact Form 7 - Home Page BODY */
+.home-banner input::placeholder {
+    color: #b79203;
+}
+.home-banner input   {
     color: black;
     background-color: #ffda90;
     border-radius: 0px;
     font-size:18px;
 }
+
+/* Two column form if screen is > 720 px */
+@media screen and (min-width: 720px) {
+    .home-banner form > p:nth-child(2) > label {
+        padding: 0px 32px 0px 32px;
+        float:left;
+        width:50%;
+    }
+    .home-banner form > p:nth-child(3) > label {
+        padding: 0px 32px 0px 32px;
+        float:left;
+        width:50%;
+    }
+}
+
 /* Events Calendar Pro */
 .tribe-events-list-separator-month {
     background-color: rgba(200, 200, 200, 1);
@@ -85,7 +103,7 @@ footer .widget ul, .widget ol{
 }
 
 /* HomePage > TopEvents */
- .topevents li{
+.topevents li{
     background-color: rgba(255, 255, 255, 0.85);
     padding: 20px 0px 20px 0px;
     color: black;
