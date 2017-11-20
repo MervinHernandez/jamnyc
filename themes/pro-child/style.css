@@ -82,6 +82,9 @@ Template: pro
     div.tribe-related-event-info > div > div {
     color:black
     }
+    ul.tribe-related-events li {
+        border:0;
+    }
 
 /*Footer Formatting*/
     footer h4 {
