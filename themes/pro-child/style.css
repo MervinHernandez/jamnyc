@@ -4,7 +4,7 @@ Theme URI: http://theme.co/pro/
 Author: Themeco
 Author URI: http://theme.co/
 Description: Make all of your modifications to Pro in this child theme.
-Version: 1.0.94
+Version: 1.0.95
 Template: pro
 */
 
@@ -77,6 +77,10 @@ Template: pro
     div.tribe-events-event-meta {
         background-color: rgba(160,0,197,0.25) !important;
         padding: 1.25em;
+    }
+    div.tribe-related-event-info, div.tribe-related-event-info > h3 > a,
+    div.tribe-related-event-info > div > div {
+    color:black
     }
 
 /*Footer Formatting*/
