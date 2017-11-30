@@ -4,7 +4,9 @@
             $ecsGrid.masonry({
                 itemSelector: '.ecs-event',
                 columnWidth: '.ecs-grid-sizer',
-                percentPosition: true
+                percentPosition: true,
+                //fitWidth: true,
+                gutter: '.ecs-gutter-sizer'
             });
         });
     });

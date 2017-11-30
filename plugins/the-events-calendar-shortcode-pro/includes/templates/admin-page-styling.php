@@ -44,6 +44,10 @@
 <blockquote>[ecs-list-events design="columns"]</blockquote>
 <blockquote>[ecs-list-events design="columns" limit="6"]</blockquote>
 
+<p><?php echo sprintf( esc_html( __( 'The design defaults to three columns but you can change that with the %s property:', 'the-events-calendar-shortcode' ) ), 'columns' ); ?></p>
+
+<blockquote>[ecs-list-events design="columns" columns="4"]</blockquote>
+
 <p><a target="_blank" href="https://demo.eventcalendarnewsletter.com/the-events-calendar-shortcode/columns-photos-horizontal-design/"><?= esc_html__( 'View Examples', 'the-events-calendar-shortcode' ) ?></a></p>
 
 <h2><?php echo esc_html( __( 'Grouped Design', 'the-events-calendar-shortcode' ) ) ?></h2>

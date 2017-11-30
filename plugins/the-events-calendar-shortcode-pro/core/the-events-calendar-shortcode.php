@@ -26,7 +26,7 @@ class Events_Calendar_Shortcode
 	 *
 	 * @since 1.0.0
 	 */
-	const VERSION = '1.7';
+	const VERSION = '1.7.2';
 
 	private $admin_page = null;
 
@@ -137,6 +137,7 @@ class Events_Calendar_Shortcode
 			'past' => null,
 			'venue' => 'false',
 			'author' => null,
+			'schema' => 'true',
 			'message' => 'There are no upcoming %s at this time.',
 			'key' => 'End Date',
 			'order' => 'ASC',
@@ -256,10 +257,10 @@ class Events_Calendar_Shortcode
 
 		if ( $posts or apply_filters( 'ecs_always_show', false, $atts ) ) {
 			$output = apply_filters( 'ecs_beginning_output', $output, $posts, $atts );
-			$output .= apply_filters( 'ecs_start_tag', '<ul class="ecs-event-list x-block-grid four-up">', $atts );
+			$output .= apply_filters( 'ecs_start_tag', '<ul class="ecs-event-list">', $atts );
 			$atts['contentorder'] = explode( ',', $atts['contentorder'] );
 
-			foreach( (array) $posts as $post ) {
+			foreach( (array) $posts as $post_index => $post ) {
 				setup_postdata( $post );
 				$event_output = '';
 				$category_slugs = array();
@@ -334,7 +335,7 @@ class Events_Calendar_Shortcode
 					}
 				}
 				$event_output .= apply_filters( 'ecs_event_end_tag', '</li>', $atts, $post );
-				$output .= apply_filters( 'ecs_single_event_output', $event_output, $atts, $post );
+				$output .= apply_filters( 'ecs_single_event_output', $event_output, $atts, $post, $post_index, $posts );
 			}
 			$output .= apply_filters( 'ecs_end_tag', '</ul>', $atts );
 			$output = apply_filters( 'ecs_ending_output', $output, $posts, $atts );
@@ -355,7 +356,7 @@ class Events_Calendar_Shortcode
 	}
 
 	public function add_event_schema_json( $output, $posts, $atts ) {
-		if ( $posts and class_exists( 'Tribe__Events__JSON_LD__Event' ) and ( ! defined( 'DOING_AJAX' ) or ! DOING_AJAX ) )
+		if ( self::isValid( $atts['schema'] ) and $posts and class_exists( 'Tribe__Events__JSON_LD__Event' ) and ( ! defined( 'DOING_AJAX' ) or ! DOING_AJAX ) )
 			$output .= Tribe__Events__JSON_LD__Event::instance()->get_markup( $posts );
 		return $output;
 	}

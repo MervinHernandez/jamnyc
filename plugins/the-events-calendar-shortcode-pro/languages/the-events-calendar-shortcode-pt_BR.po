@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: The Events Calendar Shortcode Pro\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/the-events-"
 "calendar-shortcode-pro\n"
-"POT-Creation-Date: 2017-11-01 13:20:45+00:00\n"
+"POT-Creation-Date: 2017-11-28 15:14:08+00:00\n"
 "PO-Revision-Date: 2017-09-15 11:37-0300\n"
 "Last-Translator: DJIO | Dionizio Bonfim Bach <wordpress@djio.com.br>\n"
 "Language-Team: \n"
@@ -103,7 +103,7 @@ msgstr ""
 "Determina se exibe '%s' ou não. Os valores podem ser 'true' ou 'false'. O "
 "padrão é 'true'"
 
-#: core/templates/admin-page.php:55 core/the-events-calendar-shortcode.php:344
+#: core/templates/admin-page.php:55 core/the-events-calendar-shortcode.php:345
 msgid "View All %s"
 msgstr "Ver todos %s"
 
@@ -305,7 +305,7 @@ msgstr ""
 "Exibir apenas os eventos no futuro, mesmo quando usar a opção de mês e ano."
 
 #: core/templates/admin-page.php:132
-#: includes/templates/admin-page-styling.php:73
+#: includes/templates/admin-page-styling.php:77
 msgid "Custom Design"
 msgstr "Design personalizado"
 
@@ -355,7 +355,7 @@ msgstr "Configurações"
 msgid "Upgrade"
 msgstr "Atualizar"
 
-#: core/the-events-calendar-shortcode.php:321
+#: core/the-events-calendar-shortcode.php:322
 msgid "at"
 msgstr "às"
 
@@ -438,7 +438,7 @@ msgstr "Parece que sua chave da licença é inválida para %s."
 msgid "Your license key has reached its activation limit."
 msgstr "A sua licença atingiu o limite de ativações."
 
-#: includes/designs/default.php:122
+#: includes/designs/default.php:122 templates/default_tpl.php:62
 msgid "Find out more"
 msgstr "Descubra mais"
 
@@ -594,8 +594,8 @@ msgstr ""
 #: includes/templates/admin-page-styling.php:10
 #: includes/templates/admin-page-styling.php:29
 #: includes/templates/admin-page-styling.php:38
-#: includes/templates/admin-page-styling.php:47
-#: includes/templates/admin-page-styling.php:56
+#: includes/templates/admin-page-styling.php:51
+#: includes/templates/admin-page-styling.php:60
 msgid "View Examples"
 msgstr ""
 
@@ -647,11 +647,17 @@ msgstr "Exemplo de design compacto da versão Pro"
 msgid "Creates a listing of your events split into columns:"
 msgstr ""
 
-#: includes/templates/admin-page-styling.php:49
+#: includes/templates/admin-page-styling.php:47
+msgid ""
+"The design defaults to three columns but you can change that with the %s "
+"property:"
+msgstr ""
+
+#: includes/templates/admin-page-styling.php:53
 msgid "Grouped Design"
 msgstr "Design agrupado"
 
-#: includes/templates/admin-page-styling.php:51
+#: includes/templates/admin-page-styling.php:55
 msgid ""
 "If you would like to group the events by day with just the time under each "
 "date, just add %s to the shortcode:"
@@ -659,36 +665,36 @@ msgstr ""
 "Se você quiser agrupar os eventos por dia com apenas os horários em cada "
 "data, basta adicionar %s para o shortcode:"
 
-#: includes/templates/admin-page-styling.php:58
+#: includes/templates/admin-page-styling.php:62
 msgid "Additional Design Options"
 msgstr "Opções adicionais do design"
 
-#: includes/templates/admin-page-styling.php:60
+#: includes/templates/admin-page-styling.php:64
 msgid ""
 "You can also customize the output of most of the designs with things like:"
 msgstr "Você também pode personalizar a maioria dos designs com coisas como:"
 
-#: includes/templates/admin-page-styling.php:63
+#: includes/templates/admin-page-styling.php:67
 msgid "to customize the size of the title, ie."
 msgstr "para personalizar o tamanho do título, ex:"
 
-#: includes/templates/admin-page-styling.php:64
+#: includes/templates/admin-page-styling.php:68
 msgid "to show the event thumbnail image (if any)"
 msgstr "para exibir a imagem em miniatura do evento (se houver)"
 
-#: includes/templates/admin-page-styling.php:65
+#: includes/templates/admin-page-styling.php:69
 msgid "to show the event summary description under the title"
 msgstr "para exibir a descrição resumida do evento abaixo do título"
 
-#: includes/templates/admin-page-styling.php:66
+#: includes/templates/admin-page-styling.php:70
 msgid "to show the venue name under the title"
 msgstr "para exibir o nome do local abaixo do título"
 
-#: includes/templates/admin-page-styling.php:67
+#: includes/templates/admin-page-styling.php:71
 msgid "to show the start time without the date"
 msgstr "para exibir o horário de início sem a data"
 
-#: includes/templates/admin-page-styling.php:68
+#: includes/templates/admin-page-styling.php:72
 msgid ""
 "to show a button with a link to the event (change \"%s\" to whatever you "
 "want)"
@@ -696,19 +702,19 @@ msgstr ""
 "para exibir um botão com um link para o evento (mude \"%s\" para o que você "
 "quiser)"
 
-#: includes/templates/admin-page-styling.php:69
+#: includes/templates/admin-page-styling.php:73
 msgid "to use the event website URL for the button"
 msgstr "para usar o URL do website do evento para o botão"
 
-#: includes/templates/admin-page-styling.php:70
+#: includes/templates/admin-page-styling.php:74
 msgid "and"
 msgstr "e"
 
-#: includes/templates/admin-page-styling.php:70
+#: includes/templates/admin-page-styling.php:74
 msgid "to customize button color"
 msgstr "para personalizar a cor do botão"
 
-#: includes/templates/admin-page-styling.php:75
+#: includes/templates/admin-page-styling.php:79
 msgid ""
 "If you'd like to completely customize the output you can create a folder "
 "called <strong>%s</strong> in your theme directory, and in it create a file "
@@ -718,14 +724,14 @@ msgstr ""
 "chamada <strong>%s</strong> no diretório do seu tema, e dentro dele criar um "
 "arquivo chamado <strong>%s</strong>"
 
-#: includes/templates/admin-page-styling.php:76
+#: includes/templates/admin-page-styling.php:80
 msgid ""
 "Then add your shortcode with \"%s\" as the design name (which matches %s):"
 msgstr ""
 "Em seguida, adicione seu shortcode com \"%s\" como nome do design (que "
 "corresponde a %s):"
 
-#: includes/templates/admin-page-styling.php:78
+#: includes/templates/admin-page-styling.php:82
 msgid ""
 "You can rename %s to another name and even create multiple design templates "
 "to use elsewhere on your site.  Note that you should place this folder "

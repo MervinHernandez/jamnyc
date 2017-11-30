@@ -2,10 +2,10 @@
 # This file is distributed under the GPL2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: The Events Calendar Shortcode PRO 1.8.11\n"
+"Project-Id-Version: The Events Calendar Shortcode PRO 1.8.20\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/the-events-calendar-shortcode-pro\n"
-"POT-Creation-Date: 2017-11-07 04:04:26+00:00\n"
+"POT-Creation-Date: 2017-11-29 01:37:38+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -86,7 +86,7 @@ msgid ""
 "Default to 'true'"
 msgstr ""
 
-#: core/templates/admin-page.php:55 core/the-events-calendar-shortcode.php:344
+#: core/templates/admin-page.php:55 core/the-events-calendar-shortcode.php:345
 msgid "View All %s"
 msgstr ""
 
@@ -264,7 +264,7 @@ msgid "Only show events in the future even when using the month or year option."
 msgstr ""
 
 #: core/templates/admin-page.php:132
-#: includes/templates/admin-page-styling.php:73
+#: includes/templates/admin-page-styling.php:77
 msgid "Custom Design"
 msgstr ""
 
@@ -308,7 +308,7 @@ msgstr ""
 msgid "Upgrade"
 msgstr ""
 
-#: core/the-events-calendar-shortcode.php:321
+#: core/the-events-calendar-shortcode.php:322
 msgid "at"
 msgstr ""
 
@@ -384,7 +384,7 @@ msgstr ""
 msgid "Your license key has reached its activation limit."
 msgstr ""
 
-#: includes/designs/default.php:122
+#: includes/designs/default.php:122 templates/default_tpl.php:62
 msgid "Find out more"
 msgstr ""
 
@@ -512,8 +512,8 @@ msgstr ""
 #: includes/templates/admin-page-styling.php:10
 #: includes/templates/admin-page-styling.php:29
 #: includes/templates/admin-page-styling.php:38
-#: includes/templates/admin-page-styling.php:47
-#: includes/templates/admin-page-styling.php:56
+#: includes/templates/admin-page-styling.php:51
+#: includes/templates/admin-page-styling.php:60
 msgid "View Examples"
 msgstr ""
 
@@ -557,74 +557,80 @@ msgstr ""
 msgid "Creates a listing of your events split into columns:"
 msgstr ""
 
-#: includes/templates/admin-page-styling.php:49
+#: includes/templates/admin-page-styling.php:47
+msgid ""
+"The design defaults to three columns but you can change that with the %s "
+"property:"
+msgstr ""
+
+#: includes/templates/admin-page-styling.php:53
 msgid "Grouped Design"
 msgstr ""
 
-#: includes/templates/admin-page-styling.php:51
+#: includes/templates/admin-page-styling.php:55
 msgid ""
 "If you would like to group the events by day with just the time under each "
 "date, just add %s to the shortcode:"
 msgstr ""
 
-#: includes/templates/admin-page-styling.php:58
+#: includes/templates/admin-page-styling.php:62
 msgid "Additional Design Options"
 msgstr ""
 
-#: includes/templates/admin-page-styling.php:60
+#: includes/templates/admin-page-styling.php:64
 msgid "You can also customize the output of most of the designs with things like:"
 msgstr ""
 
-#: includes/templates/admin-page-styling.php:63
+#: includes/templates/admin-page-styling.php:67
 msgid "to customize the size of the title, ie."
 msgstr ""
 
-#: includes/templates/admin-page-styling.php:64
+#: includes/templates/admin-page-styling.php:68
 msgid "to show the event thumbnail image (if any)"
 msgstr ""
 
-#: includes/templates/admin-page-styling.php:65
+#: includes/templates/admin-page-styling.php:69
 msgid "to show the event summary description under the title"
 msgstr ""
 
-#: includes/templates/admin-page-styling.php:66
+#: includes/templates/admin-page-styling.php:70
 msgid "to show the venue name under the title"
 msgstr ""
 
-#: includes/templates/admin-page-styling.php:67
+#: includes/templates/admin-page-styling.php:71
 msgid "to show the start time without the date"
 msgstr ""
 
-#: includes/templates/admin-page-styling.php:68
+#: includes/templates/admin-page-styling.php:72
 msgid ""
 "to show a button with a link to the event (change \"%s\" to whatever you "
 "want)"
 msgstr ""
 
-#: includes/templates/admin-page-styling.php:69
+#: includes/templates/admin-page-styling.php:73
 msgid "to use the event website URL for the button"
 msgstr ""
 
-#: includes/templates/admin-page-styling.php:70
+#: includes/templates/admin-page-styling.php:74
 msgid "and"
 msgstr ""
 
-#: includes/templates/admin-page-styling.php:70
+#: includes/templates/admin-page-styling.php:74
 msgid "to customize button color"
 msgstr ""
 
-#: includes/templates/admin-page-styling.php:75
+#: includes/templates/admin-page-styling.php:79
 msgid ""
 "If you'd like to completely customize the output you can create a folder "
 "called <strong>%s</strong> in your theme directory, and in it create a file "
 "called <strong>%s</strong>"
 msgstr ""
 
-#: includes/templates/admin-page-styling.php:76
+#: includes/templates/admin-page-styling.php:80
 msgid "Then add your shortcode with \"%s\" as the design name (which matches %s):"
 msgstr ""
 
-#: includes/templates/admin-page-styling.php:78
+#: includes/templates/admin-page-styling.php:82
 msgid ""
 "You can rename %s to another name and even create multiple design templates "
 "to use elsewhere on your site.  Note that you should place this folder "

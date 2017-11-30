@@ -41,7 +41,7 @@ add_filter( 'ecs_event_list_output_custom_time', 'ecs_add_timeonly_option', 5, 3
  * Ability to override the event output entirely with a template file matching
  * the design name
  */
-function ecs_override_event_output( $event_output, $atts, $post ) {
+function ecs_override_event_output( $event_output, $atts, $post, $post_index, $posts ) {
 	$filename = false;
 	if ( file_exists( trailingslashit( dirname( TECS_PLUGIN_FILE ) ) . 'templates/' .  stripslashes( $atts['design'] ) . '.php' ) )
 		$filename = trailingslashit( dirname( TECS_PLUGIN_FILE ) ) . 'templates/' .  stripslashes( $atts['design'] ) . '.php';
@@ -57,7 +57,7 @@ function ecs_override_event_output( $event_output, $atts, $post ) {
 
 	return $event_output;
 }
-add_filter( 'ecs_single_event_output', 'ecs_override_event_output', 10, 3 );
+add_filter( 'ecs_single_event_output', 'ecs_override_event_output', 10, 5 );
 
 /**
  * Adding an option to filter for a specific event

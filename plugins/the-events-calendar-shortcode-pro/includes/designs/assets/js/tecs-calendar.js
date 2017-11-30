@@ -16,9 +16,13 @@
                             $('#' + view.el.parent().parent().attr('id') + '-loading').hide();
                         }
                     },
+                    defaultDate: tecEventCalendarSettings[key]['startdate'],
                     eventRender: function( event, element, view ) {
                         var title = element.find('.fc-title, .fc-list-item-title');
                         title.html(title.text());
+                        if (event.hasOwnProperty("categories")) {
+                            element.addClass(event.categories);
+                        }
                     },
                     eventMouseover: function(calEvent, jsEvent) {
                         var tooltip = '<div id="tecs-tooltipevent" class="tooltip-' + key + '" style="padding:5px;box-shadow:3px 3px 15px #dadada;width:320px;background:#fff;color:#0a0a0a;position:absolute;z-index:10001;"><h4 class="ecs-title entry-title summary">' + calEvent.title + '</h4><div class="ecs-calendar-event-body"><div class="ecs-calendar-duration">' + JSON.parse(calEvent.details).dateDisplay + '</div><div class="ecs-calendar-excerpt">' + calEvent.excerpt + '</div></div>';

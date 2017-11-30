@@ -3,16 +3,15 @@
 Plugin Name: The Events Calendar Shortcode PRO
 Plugin URI: https://eventcalendarnewsletter.com/the-events-calendar-shortcode/
 Description: Adds shortcode functionality with design options for <a href="http://wordpress.org/plugins/the-events-calendar/">The Events Calendar Plugin by Modern Tribe</a>.
-Version: 1.8.11
+Version: 1.8.20
 Author: Event Calendar Newsletter
 Author URI: https://eventcalendarnewsletter.com/
 License: GPL2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: the-events-calendar-shortcode
 */
-/* Mervin Edition *
 
-define( 'TECS_VERSION', '1.8.11' );
+define( 'TECS_VERSION', '1.8.20' );
 define( 'TECS_PLUGIN_FILE', __FILE__ );
 
 /**
