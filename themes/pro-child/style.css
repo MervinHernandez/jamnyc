@@ -4,7 +4,7 @@ Theme URI: http://theme.co/pro/
 Author: Themeco
 Author URI: http://theme.co/
 Description: Make all of your modifications to Pro in this child theme.
-Version: 1.0.95
+Version: 1.0.97
 Template: pro
 */
 
@@ -87,17 +87,32 @@ ul.tribe-related-events li {
 }
 
 /*Footer Formatting*/
-/*Footer Formatting*/
+footer {
+    background-color:#54336D !important;
+    border:none !important;
+}
+footer p{
+    color:rgba(200, 200, 200, 1);
+}
+footer .widget {
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.95);
+
+}
 footer h4 {
     font-size: 90% !important;
+    color: rgb(160, 160, 160);
 }
 footer p, footer .widget_nav_menu ul li a, .widget_meta ul li a, .widget_pages ul li a {
     font-size: 80%;
+    color:rgb(200,200,200)
 }
 footer .widget_nav_menu ul li a, .widget_meta ul li a, .widget_pages ul li a{
     border-bottom: none !important;
     padding: 0.65em 0.85em;
     box-shadow: none;
+}
+.widget_nav_menu .current-menu-item>a {
+    background-color:transparent;
 }
 footer .widget_nav_menu ul li a:before, .widget_meta ul li a:before, .widget_pages ul li a:before{
     content:"";
@@ -109,7 +124,7 @@ footer .widget ul, .widget ol{
     background-color: transparent;
     box-shadow: none;
 }
-/* Bottom Bar */
+/* Footer - Bottom Bar */
 footer.x-colophon.bottom .x-colophon-content {
     margin:0;
 }
