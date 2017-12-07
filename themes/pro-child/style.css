@@ -4,7 +4,7 @@ Theme URI: http://theme.co/pro/
 Author: Themeco
 Author URI: http://theme.co/
 Description: Make all of your modifications to Pro in this child theme.
-Version: 1.0.99
+Version: 1.0.991
 Template: pro
 */
 
@@ -18,6 +18,9 @@ h1,h2,h3,h4,h5 {
 }
 .home-form-newsletter p {
     font-size: 30px;
+    color: black;
+    font-size: 200%;
+    margin: 0 0 0 0 !important;
 }
 .home-form-newsletter input::placeholder {
     color: #b79203;
@@ -32,8 +35,6 @@ h1,h2,h3,h4,h5 {
     border: 1px solid black;
     font-size:18px;
 }
-
-/* Two column form if screen is > 720 px */
 @media screen and (min-width: 720px) {
     .home-form-newsletter form > p:nth-child(2) > label {
         padding: 0px 32px 0px 32px;
@@ -87,7 +88,7 @@ ul.tribe-related-events li {
     border:0;
 }
 
-/*Footer Formatting*/
+/* Footer */
 footer {
     background-color:#54336D !important;
     border:none !important;
@@ -150,23 +151,3 @@ footer.x-colophon.bottom .x-colophon-content {
     letter-spacing: .235em;
 }
 
-/* HomePage > CTA banner btnplain */
-.home-form-newsletter p {
-    color: black;
-    font-size: 200%;
-    margin: 0 0 0 0 !important;
-}
-.btnplain {
-    color: black;
-    border-color: black;
-    background-color: transparent;
-    text-transform: uppercase;
-    padding: 15px 30px 15px 30px !important;
-    text-shadow: none !important;
-    font-size: 35px !important;
-}
-.btnplain:hover {
-    color: hsl(0,0%,100%);
-    border-color: rgb(255, 255, 255);
-    background-color: hsla(0, 0%, 0%, 0.46);
-}
