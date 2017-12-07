@@ -4,7 +4,7 @@ Theme URI: http://theme.co/pro/
 Author: Themeco
 Author URI: http://theme.co/
 Description: Make all of your modifications to Pro in this child theme.
-Version: 1.0.98
+Version: 1.0.99
 Template: pro
 */
 
@@ -29,6 +29,7 @@ h1,h2,h3,h4,h5 {
     color: black;
     background-color: #ffda90;
     border-radius: 0px;
+    border: 1px solid black;
     font-size:18px;
 }
 
