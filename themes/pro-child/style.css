@@ -4,7 +4,7 @@ Theme URI: http://theme.co/pro/
 Author: Themeco
 Author URI: http://theme.co/
 Description: Make all of your modifications to Pro in this child theme.
-Version: 1.0.97
+Version: 1.0.98
 Template: pro
 */
 
@@ -13,19 +13,19 @@ h1,h2,h3,h4,h5 {
     margin-top:0 !important;
 }
 /* Contact Form 7 - Home Page BODY */
-.home-banner h3 {
+.home-form-newsletter h3 {
     color: black;
 }
-.home-banner p {
+.home-form-newsletter p {
     font-size: 30px;
 }
-.home-banner input::placeholder {
+.home-form-newsletter input::placeholder {
     color: #b79203;
 }
-.home-banner input[type="submit"] {
+.home-form-newsletter input[type="submit"] {
     width:45%;
 }
-.home-banner input   {
+.home-form-newsletter input   {
     color: black;
     background-color: #ffda90;
     border-radius: 0px;
@@ -34,12 +34,12 @@ h1,h2,h3,h4,h5 {
 
 /* Two column form if screen is > 720 px */
 @media screen and (min-width: 720px) {
-    .home-banner form > p:nth-child(2) > label {
+    .home-form-newsletter form > p:nth-child(2) > label {
         padding: 0px 32px 0px 32px;
         float:left;
         width:50%;
     }
-    .home-banner form > p:nth-child(3) > label {
+    .home-form-newsletter form > p:nth-child(3) > label {
         padding: 0px 32px 0px 32px;
         float:left;
         width:50%;
@@ -150,7 +150,7 @@ footer.x-colophon.bottom .x-colophon-content {
 }
 
 /* HomePage > CTA banner btnplain */
-.home-banner p {
+.home-form-newsletter p {
     color: black;
     font-size: 200%;
     margin: 0 0 0 0 !important;
