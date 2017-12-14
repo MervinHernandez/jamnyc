@@ -4,7 +4,7 @@ Theme URI: http://theme.co/pro/
 Author: Themeco
 Author URI: http://theme.co/
 Description: Make all of your modifications to Pro in this child theme.
-Version: 1.0.993
+Version: 1.0.994
 Template: pro
 */
 
@@ -87,6 +87,10 @@ footer.x-colophon.bottom .x-colophon-content {
     line-height: 150px;
     border-radius: 100px;
     margin-left: 27%;
+}
+#sec-jam-perks .x-btn {
+    border: none;
+    background-color: rgb(0, 0, 0);
 }
 
 /* Home > Upcoming Showcases */
