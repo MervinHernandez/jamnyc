@@ -79,12 +79,13 @@ footer.x-colophon.bottom .x-colophon-content {
 /* Home > Jam Perks */
 #sec-jam-perks i {
     text-align: center;
-    color: hsl(0, 0%, 0%);
+    color: rgb(200, 200, 200);
     font-size: 80px;
-    background-color: hsla(286, 100%, 18%, 0.3);
-    width: 150px; height: 150px;
+    background-color: hsl(0, 0%, 0%);
+    width: 150px;
+    height: 150px;
     line-height: 150px;
-    border-radius: 60px;
+    border-radius: 100px;
     margin-left: 27%;
 }
 
