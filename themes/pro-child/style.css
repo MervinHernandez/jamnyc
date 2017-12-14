@@ -4,7 +4,7 @@ Theme URI: http://theme.co/pro/
 Author: Themeco
 Author URI: http://theme.co/
 Description: Make all of your modifications to Pro in this child theme.
-Version: 1.0.992
+Version: 1.0.993
 Template: pro
 */
 
@@ -78,6 +78,13 @@ footer.x-colophon.bottom .x-colophon-content {
 
 /* Home > Jam Perks */
 #sec-jam-perks i {
+    text-align: center;
+    color: hsl(0, 0%, 0%);
+    font-size: 80px;
+    background-color: hsla(286, 100%, 18%, 0.3);
+    width: 150px; height: 150px;
+    line-height: 150px;
+    border-radius: 60px;
     margin-left: 27%;
 }
 
