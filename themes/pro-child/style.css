@@ -12,7 +12,81 @@ Template: pro
 h1,h2,h3,h4,h5 {
     margin-top:0 !important;
 }
-/* Contact Form 7 - Home Page BODY */
+
+/* GLOBAL Footer */
+footer {
+    background-color:#54336D !important;
+    border:none !important;
+}
+footer p{
+    color:rgba(200, 200, 200, 1);
+}
+footer .widget {
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.95);
+
+}
+footer h4 {
+    font-size: 90% !important;
+    color: rgb(160, 160, 160);
+}
+footer p, footer .widget_nav_menu ul li a, .widget_meta ul li a, .widget_pages ul li a {
+    font-size: 80%;
+    color:rgb(200,200,200)
+}
+footer .widget_nav_menu ul li a, .widget_meta ul li a, .widget_pages ul li a{
+    border-bottom: none !important;
+    padding: 0.65em 0.85em;
+    box-shadow: none;
+}
+.widget_nav_menu .current-menu-item>a {
+    background-color:transparent;
+}
+footer .widget_nav_menu ul li a:before, .widget_meta ul li a:before, .widget_pages ul li a:before{
+    content:"";
+}
+footer .widget ul, .widget ol{
+    border: none;
+    list-style: none;
+    border-radius: 0px;
+    background-color: transparent;
+    box-shadow: none;
+}
+/* GLOBAL > Footer > Bottom Bar */
+footer.x-colophon.bottom .x-colophon-content {
+    margin:0;
+}
+
+/* HomePage > TopEvents */
+.topevents li{
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px 0px 20px 0px;
+    color: black;
+    text-align: center;
+}
+.topevents a {
+    color: #a000c5;
+    font-weight: 600;
+    font-size: 140%;
+    line-height: 1;
+}
+#topevents-month {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 130%;
+    letter-spacing: .235em;
+}
+
+/* Home > Jam Perks */
+#sec-jam-perks i {
+    margin-left: 27%;
+}
+
+/* Home > Upcoming Showcases */
+.home-upcoming span, h2 > a {
+    color:white !important;
+}
+
+/* Home > Newsletter */
 .home-form-newsletter h3 {
     color: black;
 }
@@ -87,76 +161,3 @@ div.tribe-related-event-info > div > div {
 ul.tribe-related-events li {
     border:0;
 }
-
-/* Home - Upcoming */
-.home-upcoming span, h2 > a {
-    color:white !important;
-}
-
-/* Home - Jam Perks */
-#sec-jam-perks i {
-    margin-left: 27%;
-}
-/* Footer */
-footer {
-    background-color:#54336D !important;
-    border:none !important;
-}
-footer p{
-    color:rgba(200, 200, 200, 1);
-}
-footer .widget {
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.95);
-
-}
-footer h4 {
-    font-size: 90% !important;
-    color: rgb(160, 160, 160);
-}
-footer p, footer .widget_nav_menu ul li a, .widget_meta ul li a, .widget_pages ul li a {
-    font-size: 80%;
-    color:rgb(200,200,200)
-}
-footer .widget_nav_menu ul li a, .widget_meta ul li a, .widget_pages ul li a{
-    border-bottom: none !important;
-    padding: 0.65em 0.85em;
-    box-shadow: none;
-}
-.widget_nav_menu .current-menu-item>a {
-    background-color:transparent;
-}
-footer .widget_nav_menu ul li a:before, .widget_meta ul li a:before, .widget_pages ul li a:before{
-    content:"";
-}
-footer .widget ul, .widget ol{
-    border: none;
-    list-style: none;
-    border-radius: 0px;
-    background-color: transparent;
-    box-shadow: none;
-}
-/* Footer - Bottom Bar */
-footer.x-colophon.bottom .x-colophon-content {
-    margin:0;
-}
-
-/* HomePage > TopEvents */
-.topevents li{
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 20px 0px 20px 0px;
-    color: black;
-    text-align: center;
-}
-.topevents a {
-    color: #a000c5;
-    font-weight: 600;
-    font-size: 140%;
-    line-height: 1;
-}
-#topevents-month {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 130%;
-    letter-spacing: .235em;
-}
-
