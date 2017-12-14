@@ -88,9 +88,14 @@ footer.x-colophon.bottom .x-colophon-content {
     border-radius: 100px;
     margin-left: 27%;
 }
-#sec-jam-perks .x-btn {
+#sec-jam-perks a {
     border: none;
     background-color: rgb(0, 0, 0);
+    text-shadow:none;
+}
+#sec-jam-perks a:hover {
+    color:black;
+    background-color:rgb(150,150,150);
 }
 
 /* Home > Upcoming Showcases */
