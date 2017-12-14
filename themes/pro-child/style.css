@@ -93,6 +93,10 @@ ul.tribe-related-events li {
     color:white !important;
 }
 
+/* Home - Jam Perks */
+#sec-jam-perks i {
+    margin-left: 27%;
+}
 /* Footer */
 footer {
     background-color:#54336D !important;
