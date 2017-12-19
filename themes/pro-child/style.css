@@ -4,7 +4,7 @@ Theme URI: http://theme.co/pro/
 Author: Themeco
 Author URI: http://theme.co/
 Description: Make all of your modifications to Pro in this child theme.
-Version: 1.0.997
+Version: 1.0.998
 Template: pro
 */
 
@@ -28,9 +28,11 @@ footer .widget {
 footer h4 {
     font-size: 90% !important;
     color: rgb(160, 160, 160);
+    text-shadow:none;
 }
 footer p, footer .widget_nav_menu ul li a, .widget_meta ul li a, .widget_pages ul li a {
     font-size: 80%;
+    text-shadow:none;
     color:rgb(200,200,200)
 }
 footer .widget_nav_menu ul li a, .widget_meta ul li a, .widget_pages ul li a{
@@ -54,6 +56,7 @@ footer .widget ul, .widget ol{
 /* GLOBAL > Footer > Bottom Bar */
 footer.x-colophon.bottom .x-colophon-content {
     margin:0;
+    color:white;
 }
 
 /* HomePage > TopEvents */
@@ -98,6 +101,10 @@ footer.x-colophon.bottom .x-colophon-content {
     background-color:rgb(150,150,150);
 }
 
+/* Home > Upcoming */
+#home-upcoming span{
+    color:white !important:
+}
 /* Home > Newsletter */
 #home-newsletter h3 {
     color: #54336D;
