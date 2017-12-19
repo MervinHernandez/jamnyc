@@ -98,11 +98,6 @@ footer.x-colophon.bottom .x-colophon-content {
     background-color:rgb(150,150,150);
 }
 
-/* Home > Upcoming Showcases */
-.home-upcoming span, h2 > a {
-    color:white !important;
-}
-
 /* Home > Newsletter */
 #home-newsletter h3 {
     color: #54336D;
