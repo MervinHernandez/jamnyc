@@ -4,11 +4,11 @@ Theme URI: http://theme.co/pro/
 Author: Themeco
 Author URI: http://theme.co/
 Description: Make all of your modifications to Pro in this child theme.
-Version: 1.0.996
+Version: 1.0.997
 Template: pro
 */
 
-/* Global Settings */
+/* GLOBAL Settings */
 h1,h2,h3,h4,h5 {
     margin-top:0 !important;
 }
@@ -104,39 +104,36 @@ footer.x-colophon.bottom .x-colophon-content {
 }
 
 /* Home > Newsletter */
-.home-form-newsletter h3 {
-    color: black;
+#home-newsletter h3 {
+    color: #54336D;
 }
-.home-form-newsletter p {
-    font-size: 30px;
-    color: black;
-    font-size: 200%;
-    margin: 0 0 0 0 !important;
-}
-.home-form-newsletter input::placeholder {
-    color: #b79203;
-}
-.home-form-newsletter input[type="submit"] {
-    width:45%;
-}
-.home-form-newsletter input   {
+#home-newsletter input   {
     color: black;
     background-color: #ffda90;
-    border-radius: 0px;
-    border: 1px solid black;
+    border: 0px transparent solid;
     font-size:18px;
 }
+#home-newsletter input::placeholder {
+    color: #b79203;
+}
 @media screen and (min-width: 720px) {
-    .home-form-newsletter form > p:nth-child(2) > label {
+    #home-newsletter form > p:nth-child(2) > label {
         padding: 0px 32px 0px 32px;
         float:left;
         width:50%;
     }
-    .home-form-newsletter form > p:nth-child(3) > label {
+    #home-newsletter form > p:nth-child(3) > label {
         padding: 0px 32px 0px 32px;
         float:left;
         width:50%;
     }
+}
+
+#home-newsletter input[type="submit"] {
+    width:45%;
+    background-color:black;
+    color:white;
+    text-transform:uppercase;
 }
 
 /* Events Calendar Pro */
