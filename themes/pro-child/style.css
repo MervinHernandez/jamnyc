@@ -49,7 +49,7 @@ footer .widget_nav_menu ul li a:before, .widget_meta ul li a:before, .widget_pag
 footer .widget ul, .widget ol{
     border: none;
     list-style: none;
-    border-radius: 0px;
+    border-radius: 0;
     background-color: transparent;
     box-shadow: none;
 }
@@ -62,7 +62,7 @@ footer.x-colophon.bottom .x-colophon-content {
 /* HomePage > TopEvents */
 .topevents li{
     background-color: rgba(255, 255, 255, 0.85);
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0 20px 0;
     color: black;
     text-align: center;
 }
@@ -103,7 +103,7 @@ footer.x-colophon.bottom .x-colophon-content {
 
 /* Home > Upcoming */
 #home-upcoming span{
-    color:white !important:
+    color:white !important;
 }
 /* Home > Newsletter */
 #home-newsletter h3 {
@@ -112,7 +112,7 @@ footer.x-colophon.bottom .x-colophon-content {
 #home-newsletter input   {
     color: black;
     background-color: #ffda90;
-    border: 0px transparent solid;
+    border: 0 transparent solid;
     font-size:18px;
 }
 #home-newsletter input::placeholder {
@@ -120,12 +120,12 @@ footer.x-colophon.bottom .x-colophon-content {
 }
 @media screen and (min-width: 720px) {
     #home-newsletter form > p:nth-child(2) > label {
-        padding: 0px 32px 0px 32px;
+        padding: 0 32px 0 32px;
         float:left;
         width:50%;
     }
     #home-newsletter form > p:nth-child(3) > label {
-        padding: 0px 32px 0px 32px;
+        padding: 0 32px 0 32px;
         float:left;
         width:50%;
     }
