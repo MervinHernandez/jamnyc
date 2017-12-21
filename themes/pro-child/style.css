@@ -33,7 +33,7 @@ footer h4 {
 footer p, footer .widget_nav_menu ul li a, .widget_meta ul li a, .widget_pages ul li a {
     font-size: 80%;
     text-shadow:none;
-    color:rgb(200,200,200)
+    color:rgb(200,200,200);
 }
 footer .widget_nav_menu ul li a, .widget_meta ul li a, .widget_pages ul li a{
     border-bottom: none !important;
@@ -57,6 +57,21 @@ footer .widget ul, .widget ol{
 footer.x-colophon.bottom .x-colophon-content {
     margin:0;
     color:white;
+}
+footer #text-2 input[type="text"], input[type="email"]{
+    background-color: #ffffff47;
+    border:0;
+}
+footer #text-2 input::placeholder {
+    color: #ffffff;
+}
+footer #text-2 input[type="submit"] {
+    width:100%;
+    padding-top:.7em;
+    border:0;
+    background-color:#2e1d3c;
+    color:white;
+    text-transform:uppercase;
 }
 
 /* HomePage > TopEvents */
