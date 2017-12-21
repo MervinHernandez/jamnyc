@@ -54,9 +54,13 @@ footer .widget ul, .widget ol{
     box-shadow: none;
 }
 /* GLOBAL > Footer > Bottom Bar */
+footer.x-colophon.bottom {
+    box-shadow:none;
+    background-color:#191919 !important;
+    color:#c8c8c8;
+}
 footer.x-colophon.bottom .x-colophon-content {
     margin:0;
-    color:white;
 }
 footer #text-2 input[type="text"], input[type="email"]{
     background-color: #ffffff47;
