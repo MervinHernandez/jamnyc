@@ -4,7 +4,7 @@ Theme URI: http://theme.co/pro/
 Author: Themeco
 Author URI: http://theme.co/
 Description: Make all of your modifications to Pro in this child theme.
-Version: 1.18.0
+Version: 1.18.1
 Template: pro
 */
 
@@ -157,42 +157,9 @@ footer #text-2 input[type="submit"] {
     text-transform:uppercase;
 }
 
-/* Events Calendar Pro */
-.tribe-events-list-separator-month {
-    background-color: rgba(200, 200, 200, 1);
-    display: block;
-    font-size: 14px;
-    font-weight: 700;
-    margin: 1.5em 0 0;
-    padding: 6px;
-    text-transform: uppercase;
-    color: black;
-}
-div.event-is-recurring, .event-is-recurring:hover {color: #d4d4d4;}
-div.tribe-events-notices {
-    background: rgba(150, 150, 150, 1);
-    border-radius: 4px;
-    border: none;
-    color: black;
-    margin: 10px 0 18px;
-    padding: 8px 35px 8px 14px;
-    text-shadow: none;
-}
-div#tribe-events-pg-template {
-    background:black;
-    padding:2em;
-}
-div#tribe-events-pg-template, .tribe-events-event-meta, .tribe-events-content {
-    border: none !important;
-}
-div.tribe-events-event-meta {
-    background-color: rgba(160,0,197,0.25) !important;
-    padding: 1.25em;
-}
-div.tribe-related-event-info, div.tribe-related-event-info > h3 > a,
-div.tribe-related-event-info > div > div {
-    color:black
-}
-ul.tribe-related-events li {
-    border:0;
-}
+/* Tribe Events - Custom CSS */
+/* The custom CSS for Tribe Events are located
+   in the child elements of tribe events:
+   > pro-child / tribe-events / tribe-events.css
+   > pro-child / tribe-events / pro / tribe-events-pro.css
+ */
