@@ -5,33 +5,3 @@
     v1.0
     =========================
  */
-/* Events Page - Title */
-.tribe-events-page-title {
-    color:white;
-}
-
-/* Events Page - Background */
-#tribe-events-pg-template {
-    background-color: rgba(0, 0, 0, .9);
-    padding:2em;
-}
-/* Events Page - Pagination */
-.tribe-events-nav-previous a, .tribe-events-nav-next a{
-    color:#f9c04d;
-}
-/* Events Page - Month Section Heading */
-span.tribe-events-list-separator-month {
-    color:#f5f5f5;
-    background-color: #4b447a;
-    line-height:2.1em;
-}
-
-/* Events Page - MetaBox */
-.tribe-events-event-meta {
-    background-color: rgb(245, 245, 245) !important;
-}
-
-/* Recurring Event */
-.event-is-recurring {
-    color:black !important;
-}
