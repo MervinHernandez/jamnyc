@@ -20,7 +20,12 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 } ?>
-
+<style>
+    /*Featured Event meta - background color*/
+    .tribe-event-featured {
+        background-color: #56336D !important;
+    }
+</style>
 <div id="tribe-events-content" class="tribe-events-list">
 
 
