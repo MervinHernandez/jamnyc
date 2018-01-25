@@ -20,7 +20,6 @@ add_filter( 'x_enqueue_parent_stylesheet', '__return_true' );
 
 // Additional Functions
 // =============================================================================
-include 'gw-snippet.php';
 
 // ACF - Custom Gear List Page
 add_action('acf/init', 'my_acf_init');
