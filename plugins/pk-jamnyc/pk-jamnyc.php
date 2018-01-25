@@ -9,4 +9,13 @@
 * Plugin Type: Piklist
 */
 
-
+add_filter('piklist_admin_pages', 'my_admin_pages');
+function my_admin_pages($pages) {
+	$pages[] = array(
+		'page_title' => __('Jam NYC')
+		,'menu_title' => __('The Jam NYC', 'jam-admin')
+		,'capability' => 'manage_options'
+		,'menu_slug' => 'jam_admin'
+	);
+	return $pages;
+}
