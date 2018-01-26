@@ -78,6 +78,23 @@ footer #text-2 input[type="submit"] {
     text-transform:uppercase;
 }
 
+/* GLOBAL > Footer > Gravit Form > MailChimp Signup */
+.widget ul li:hover, .widget ol li:hover{
+    background-color:transparent;
+}
+.widget ul li, .widget ol li {
+    border-bottom:0;
+    padding:0;
+    box-shadow:none;
+}
+li#field_4_1 > label, span#input_4_1_3_container > label, #field_4_2 > label, span#input_4_1_6_container > label {
+    display:none;
+}
+input#input_4_2 {
+    width: 100%;
+}
+
+
 /* HomePage > TopEvents */
 .topevents li{
     background-color: rgba(255, 255, 255, 0.85);
@@ -96,65 +113,6 @@ footer #text-2 input[type="submit"] {
     font-weight: 600;
     font-size: 130%;
     letter-spacing: .235em;
-}
-
-/* Home > Jam Perks */
-#sec-jam-perks i {
-    text-align: center;
-    color: rgb(200, 200, 200);
-    font-size: 80px;
-    background-color: hsl(0, 0%, 0%);
-    width: 150px;
-    height: 150px;
-    line-height: 150px;
-    border-radius: 100px;
-    margin-left: 27%;
-}
-#sec-jam-perks a {
-    border: none;
-    background-color: rgb(0, 0, 0);
-    text-shadow:none;
-}
-#sec-jam-perks a:hover {
-    color:black;
-    background-color:rgb(150,150,150);
-}
-
-/* Home > Upcoming */
-#home-upcoming span{
-    color:white !important;
-}
-/* Home > Newsletter */
-#home-newsletter h3 {
-    color: #54336D;
-}
-#home-newsletter input   {
-    color: black;
-    background-color: #ffda90;
-    border: 0 transparent solid;
-    font-size:18px;
-}
-#home-newsletter input::placeholder {
-    color: #b79203;
-}
-@media screen and (min-width: 720px) {
-    #home-newsletter form > p:nth-child(2) > label {
-        padding: 0 32px 0 32px;
-        float:left;
-        width:50%;
-    }
-    #home-newsletter form > p:nth-child(3) > label {
-        padding: 0 32px 0 32px;
-        float:left;
-        width:50%;
-    }
-}
-
-#home-newsletter input[type="submit"] {
-    width:45%;
-    background-color:black;
-    color:white;
-    text-transform:uppercase;
 }
 
 /* Tribe Events - Custom CSS */
