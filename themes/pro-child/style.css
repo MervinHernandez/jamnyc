@@ -106,6 +106,10 @@ input#gform_submit_button_4 {
     padding: .8em;
 }
 
+div#gform_confirmation_wrapper_4 {
+    color: white;
+}
+
 /* HomePage > TopEvents */
 .topevents li{
     background-color: rgba(255, 255, 255, 0.85);
