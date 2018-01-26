@@ -94,6 +94,17 @@ input#input_4_2 {
     width: 100%;
 }
 
+input#input_4_1_3, input#input_4_1_6, input#input_4_2 {
+    background-color: rgba(255, 255, 255, 0.2784313725490196);
+    border: 0;
+    color:white;
+}
+input#gform_submit_button_4 {
+    background-color: #2e1d3c;
+    width: 100%;
+    line-height: 1em;
+    padding: .8em;
+}
 
 /* HomePage > TopEvents */
 .topevents li{
