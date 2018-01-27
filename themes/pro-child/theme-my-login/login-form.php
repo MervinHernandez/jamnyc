@@ -7,6 +7,9 @@ Jam NYC 2018
 <div class="el19 x-container max width">
 	<!--Column-->
 	<div class="el20 x-column x-sm x-1-2">
+        <div class="el25 x-text">
+            <h4>Jam Members</h4><p>you can login here</p>
+        </div>
 		<div class="tml tml-login" id="theme-my-login<?php $template->the_instance(); ?>">
 			<?php $template->the_action_template_message( 'login' ); ?>
 			<?php $template->the_errors(); ?>
@@ -47,13 +50,13 @@ Jam NYC 2018
 			</form>
 			<?php $template->the_action_links( array( 'login' => false ) ); ?>
 		</div>
-
 	</div>
 	<!--Column-->
 	<div class="el23 x-column x-sm x-1-2">
 		<div class="el24 x-text">
-			<h4>New Members</h4><p>if you're visiting and would like to become a Jam Member:</p></div>
-			<a class="el25 x-btn" tabindex="0" href="/account/register">Register Now</a>
+			<h4>New Members</h4><p>if you're visiting and would like to become a Jam Member:</p>
+        </div>
+		<a class="el25 x-btn" tabindex="0" href="/account/register">Register Now</a>
 	</div>
 </div>
 
