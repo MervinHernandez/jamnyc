@@ -25,6 +25,18 @@ if ( ! defined( 'ABSPATH' ) ) {
     .tribe-event-featured {
         background-color: #56336D !important;
     }
+    .tribe-events-event-image {
+        width:unset !important;
+        margin:0 !important;
+    }
+    .tribe-events-list-event-description > a.tribe-events-read-more {
+        background-color: rgb(84,51,109);
+        color: white;
+        text-transform: uppercase;
+        font-family: "Titillium Web",sans-serif;
+        padding: 0.575em 0.85em 0.575em 0.85em;
+        margin: 5px;
+    }
 </style>
 <div id="tribe-events-content" class="tribe-events-list">
 
