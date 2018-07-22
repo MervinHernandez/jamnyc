@@ -25,6 +25,10 @@ add_filter( 'x_enqueue_parent_stylesheet', '__return_true' );
 // Additional Functions
 // =============================================================================
 
+// WordPress - Remove Emoji load
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+
 // WordPress - HIDE Link Manager
 function remove_links_menu() {
 	remove_menu_page('link-manager.php');
