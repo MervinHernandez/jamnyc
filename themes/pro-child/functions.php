@@ -18,12 +18,11 @@
 
 add_filter( 'x_enqueue_parent_stylesheet', '__return_true' );
 
-// HIDE Messages
-// =============================================================================
-
-
 // Additional Functions
 // =============================================================================
+
+// WooCommerce - Account Page - Additional Tab
+include 'functions-wc-account-tab.php';
 
 // WordPress - Remove Emoji load
 remove_action('wp_head', 'print_emoji_detection_script', 7);
