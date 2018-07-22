@@ -4,7 +4,7 @@ Theme URI: http://theme.co/pro/
 Author: Themeco
 Author URI: http://theme.co/
 Description: Make all of your modifications to Pro in this child theme.
-Version: 1.18.7.22
+Version: 1.18.7.22.9
 Template: pro
 */
 
@@ -28,11 +28,15 @@ button, input[type=submit] {
     text-transform: uppercase;
     text-shadow: none !important;
     font-family: "Titillium Web",sans-serif;
+    letter-spacing: .085em;
 }
 
 /* GLOBAL Settings */
 h1,h2,h3,h4,h5 {
     margin-top:0 !important;
+}
+body.blank-page {
+    background-color: white;
 }
 
 /* GLOBAL Footer */
@@ -160,6 +164,25 @@ ul.wc-saved-payment-methods {
 .woocommerce-order > h2 {
     font-size:3em !important;
 }
+.woocommerce .blockUI.blockOverlay:before,.woocommerce .loader:before {
+    height: 3em;
+    width: 3em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -.5em;
+    margin-top: -.5em;
+    display: block;
+    content: "";
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+    background: url('/wp-content/uploads/static/loading.gif') center center;
+    background-size: cover;
+    line-height: 1;
+    text-align: center;
+    font-size: 2em;
+}
 
 /* Events Calendar - Inline Ad */
 .tec-ad {
@@ -184,23 +207,62 @@ ul.wc-saved-payment-methods {
     background-color:rgb(84,51,109);
 }
 
-/* WooCommerce */
-.woocommerce .blockUI.blockOverlay:before,.woocommerce .loader:before {
-    height: 3em;
-    width: 3em;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-left: -.5em;
-    margin-top: -.5em;
-    display: block;
-    content: "";
-    -webkit-animation: none;
-    -moz-animation: none;
-    animation: none;
-    background: url('/wp-content/uploads/static/loading.gif') center center;
-    background-size: cover;
-    line-height: 1;
+/* FRONT END PERSONAL MESSAGES */
+.fep-success {
+    background-color: #66ff99;
+    border-color: #00ff00;
+}
+#fep-notification-bar {
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -moz-box-sizing: border-box;
+    -webkit-border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    background-color: #f5cc01;
+    border-color: #f5cc01;
+    border-radius: 3px;
+    border-style: none;
+    border-width: 1px;
+    box-sizing: border-box;
+    color: #533a6d;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1em;
+    position: relative;
     text-align: center;
-    font-size: 2em;
+    width: 100%;
+    z-index: 999999;
+}
+span.fep_unread_message_count_text {
+    color: black;
+}
+/* Messages Page */
+#fep-content h1, h2 {
+    font-size: 1.5em;
+}
+#fep-menu .fep-button,
+.fep-button,
+.fep-button-active {
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    border: 0;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: none;
+    font-family: "Titillium Web",sans-serif;
+    letter-spacing:.085em;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+#fep-menu .fep-button:hover,
+.fep-button-active {
+    font-size: 1em;
+}
+.fep-error, .fep-success, .fep-wp-error{
+    background-color: rgba(84, 51, 109, 0.1803921568627451);
+    border-color: rgba(255, 255, 255, 0);
+    color: #53336c;
 }
