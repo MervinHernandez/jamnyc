@@ -4,9 +4,31 @@ Theme URI: http://theme.co/pro/
 Author: Themeco
 Author URI: http://theme.co/
 Description: Make all of your modifications to Pro in this child theme.
-Version: 1.18.1.26
+Version: 1.18.7.22
 Template: pro
 */
+
+/* GLOBAL - X Theme Customizations */
+.button {
+    text-shadow: none;
+}
+.x-alert {
+    text-shadow: none;
+    box-shadow: none;
+}
+.x-alert-info {
+    background-color: rgba(84, 51, 109, 0.1803921568627451);
+    border-color: rgba(255, 255, 255, 0);
+    color: #53336c;
+}
+.x-line {
+    width:100% !important;
+}
+button, input[type=submit] {
+    text-transform: uppercase;
+    text-shadow: none !important;
+    font-family: "Titillium Web",sans-serif;
+}
 
 /* GLOBAL Settings */
 h1,h2,h3,h4,h5 {
@@ -40,7 +62,7 @@ footer .widget_nav_menu ul li a, .widget_meta ul li a, .widget_pages ul li a{
     padding: 0.65em 0.85em;
     box-shadow: none;
 }
-.widget_nav_menu .current-menu-item>a {
+footer .widget_nav_menu .current-menu-item>a {
     background-color:transparent;
 }
 footer .widget_nav_menu ul li a:before, .widget_meta ul li a:before, .widget_pages ul li a:before{
@@ -93,7 +115,6 @@ li#field_4_1 > label, span#input_4_1_3_container > label, #field_4_2 > label, sp
 input#input_4_2 {
     width: 100%;
 }
-
 input#input_4_1_3, input#input_4_1_6, input#input_4_2 {
     background-color: rgba(255, 255, 255, 0.2784313725490196);
     border: 0;
@@ -105,16 +126,8 @@ input#gform_submit_button_4 {
     line-height: 1em;
     padding: .8em;
 }
-
 div#gform_confirmation_wrapper_4 {
     color: white;
-}
-
-/* GLOBAL - Alerts */
-.x-alert-info {
-    background-color: rgba(84, 51, 109, 0.1803921568627451);
-    border-color: rgba(255, 255, 255, 0);
-    color: #53336c;
 }
 
 /* HomePage > TopEvents */
@@ -135,4 +148,59 @@ div#gform_confirmation_wrapper_4 {
     font-weight: 600;
     font-size: 130%;
     letter-spacing: .235em;
+}
+
+/* WOOCOMMERCE  */
+ul.woocommerce-error > li > a.button {
+    background-color: unset;
+}
+ul.wc-saved-payment-methods {
+    list-style: none;
+}
+.woocommerce-order > h2 {
+    font-size:3em !important;
+}
+
+/* Events Calendar - Inline Ad */
+.tec-ad {
+    padding:3em 2em 3em 2em;
+    background-color:black;
+}
+.tec-ad h3 {
+    color:white;
+    font-size:2em !important;
+}
+.tec-ad p {
+    color:white;
+}
+.tec-ad a {
+    background-color:white;
+    padding: 0.575em 0.85em 0.575em 0.85em;
+    font-family:'Titillium Web';
+    text-transform:uppercase;
+}
+.tec-ad a:hover {
+    color:white;
+    background-color:rgb(84,51,109);
+}
+
+/* WooCommerce */
+.woocommerce .blockUI.blockOverlay:before,.woocommerce .loader:before {
+    height: 3em;
+    width: 3em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -.5em;
+    margin-top: -.5em;
+    display: block;
+    content: "";
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+    background: url('/wp-content/uploads/static/loading.gif') center center;
+    background-size: cover;
+    line-height: 1;
+    text-align: center;
+    font-size: 2em;
 }
