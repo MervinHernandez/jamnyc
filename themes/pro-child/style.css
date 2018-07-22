@@ -110,6 +110,13 @@ div#gform_confirmation_wrapper_4 {
     color: white;
 }
 
+/* GLOBAL - Alerts */
+.x-alert-info {
+    background-color: rgba(84, 51, 109, 0.1803921568627451);
+    border-color: rgba(255, 255, 255, 0);
+    color: #53336c;
+}
+
 /* HomePage > TopEvents */
 .topevents li{
     background-color: rgba(255, 255, 255, 0.85);
@@ -129,10 +136,3 @@ div#gform_confirmation_wrapper_4 {
     font-size: 130%;
     letter-spacing: .235em;
 }
-
-/* Tribe Events - Custom CSS */
-/* The custom CSS for Tribe Events are located
-   in the child elements of tribe events:
-   > pro-child / tribe-events / tribe-events.css
-   > pro-child / tribe-events / pro / tribe-events-pro.css
- */
