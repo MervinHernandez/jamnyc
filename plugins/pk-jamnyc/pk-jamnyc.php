@@ -1,12 +1,10 @@
 <?php
-/**
-* Plugin Name: Piklist - Jam NYC Customizations
-* Plugin URI: https://mervinhernandez.com
-* Description: These are custom functions created on Piklist
-* Version: 1.0.0
-* Author: Mervin Hernandez
-* Author URI: https://mervinhernandez.com
-* Plugin Type: Piklist
+/*
+Plugin Name: TheJam.nyc - Custom Functionality
+Plugin URI: https://wingmanwp.com
+Description: The Jam NYC website customizations
+Version: 0.18.07.29
+Author: WingMan WP
+Author URI: https://wingmanwp.com
+Plugin Type: Piklist
 */
-
-
