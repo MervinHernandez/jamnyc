@@ -8,3 +8,6 @@ Author: WingMan WP
 Author URI: https://wingmanwp.com
 Plugin Type: Piklist
 */
+
+/* Include */
+include 'other-functions.php';
