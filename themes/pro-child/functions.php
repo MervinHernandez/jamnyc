@@ -21,8 +21,6 @@ add_filter( 'x_enqueue_parent_stylesheet', '__return_true' );
 // Additional Functions
 // =============================================================================
 
-// WooCommerce - Account Page - Additional Tab
-include 'functions-wc-account-tab.php';
 
 // WordPress - Remove Emoji load
 remove_action('wp_head', 'print_emoji_detection_script', 7);
@@ -34,7 +32,10 @@ function remove_links_menu() {
 }
 add_action( 'admin_menu', 'remove_links_menu' );
 
-// WOO - Exclude Category from Shop Page
+// WOOCOMMERCE - Account Page - Additional Tab
+include 'functions-wc-account-tab.php';
+
+// WOOCOMMERCE - Exclude Category from Shop Page
 function custom_pre_get_posts_query( $q ) {
 
 	$tax_query = (array) $q->get( 'tax_query' );
@@ -51,6 +52,20 @@ function custom_pre_get_posts_query( $q ) {
 
 }
 add_action( 'woocommerce_product_query', 'custom_pre_get_posts_query' );
+
+// WOOCOMMERCE - Automatically Complete Orders
+/**
+ * Auto Complete all WooCommerce orders.
+ */
+add_action( 'woocommerce_thankyou', 'custom_woocommerce_auto_complete_order' );
+function custom_woocommerce_auto_complete_order( $order_id ) {
+	if ( ! $order_id ) {
+		return;
+	}
+
+	$order = wc_get_order( $order_id );
+	$order->update_status( 'completed' );
+}
 
 // GRAVITY - Custom Activation Page SUB FOLDER
 /**
