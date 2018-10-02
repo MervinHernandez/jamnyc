@@ -205,6 +205,7 @@ ul.wc-saved-payment-methods {
     padding: 0.575em 0.85em 0.575em 0.85em;
     font-family:'Titillium Web';
     text-transform:uppercase;
+    line-height: 5em;
 }
 .tec-ad a:hover {
     color:white;
